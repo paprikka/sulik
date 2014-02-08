@@ -1,0 +1,38 @@
+{
+  "name": "Sulik",
+  "author": "Rafal Pastuszak <rafal.pastuszak@gmail.com>",
+  "description": "",
+  "version": "0.0.1",
+  "dependencies": {
+    "console-polyfill": "*",
+    "jquery": "1.9.1",
+    "angular": "1.2.10",
+    "angular-resource": "1.2.10",
+    "angular-cookies": "1.2.10",
+    "angular-route": "1.2.10",
+    "angular-mocks": "1.2.10",
+    "lodash": "~1.2.1",
+    "json3": "~3.2.4",
+    "es5-shim": "~2.0.11",
+    "toastr": "~2.0.1",
+    "inuit-less": "git://github.com/peterwilsoncc/inuit.css#v5.0-LESS",
+    "cordova": "2.7.0",
+    "ngDialog": "*",
+    "animate.css": "~3.0.0",
+    "angular-touch": "1.2.10",
+    "fastclick": "~0.6.10",
+    "angular-animate": "1.2.10",
+    "jasmine-sinon": "~0.3.1"
+  },
+  "authors": [
+    "Rafal Pastuszak <rafal.pastuszak@gmail.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/vendor",
+    "test",
+    "tests"
+  ]
+}
