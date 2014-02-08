@@ -47,7 +47,7 @@
     </script>
     <!-- <script src="js/core/modernizr.js"></script> -->
   </head>
-  <body ng-controller="core.controllers.app" id="ng-app">
+  <body ng-controller="app.controllers.Application" id="ng-app" ng-app="app">
 
 <!--     <debug class="is-scrollable">
       <h1>debug</h1>
@@ -59,6 +59,8 @@
     <div class="viewport">
       <div ng-view class="viewport__content"></div>
     </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/templates.js"></script>
 <!--     <script src="js/core/vendor.js"></script>
     <script src="js/core/templates.js"></script>
     <script src="js/vendor.js"></script>

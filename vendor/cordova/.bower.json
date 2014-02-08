@@ -1,0 +1,23 @@
+{
+  "name": "cordova",
+  "version": "2.7.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mgcrea/bower-cordova.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "homepage": "https://github.com/mgcrea/bower-cordova",
+  "_release": "2.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.7.0",
+    "commit": "550b9a9d0d2b05192eb88ea5746cfaab7876ad53"
+  },
+  "_source": "git://github.com/mgcrea/bower-cordova.git",
+  "_target": "2.7.0",
+  "_originalSource": "cordova"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "inuit.css",
+  "dependencies": {},
+  "homepage": "https://github.com/peterwilsoncc/inuit.css",
+  "_release": "v5.0-LESS",
+  "_resolution": {
+    "type": "tag",
+    "tag": "v5.0-LESS",
+    "commit": "fd53e8ba078f78c0e67e09e952f687a7f1a1e226"
+  },
+  "_source": "git://github.com/peterwilsoncc/inuit.css.git",
+  "_target": "v5.0-LESS",
+  "_originalSource": "git://github.com/peterwilsoncc/inuit.css"
+}
