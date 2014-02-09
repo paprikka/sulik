@@ -4,9 +4,8 @@ A Voice Recognition Experiment.
 
 - Continuous listening mode (needs SSL enabled)
 - Uses Wolphram Alpha as a definition API. 
-- TODO: TSS using Ivona
-- TODO: plugins
-- TODO: error handling
+- TODO: TTS using Ivona
+  - currently uses http://tts-api.com/ which is *extremely* slow
 
 Installation:
 
