@@ -15,4 +15,6 @@ app.use(serve('dist/'));
 console.log('listening on port 3000');
 
 
-https.createServer(options, app.callback()).listen(3000);
+https.createServer(options, app.callback()).listen(process.env.port || 3000);
+
+// require('http').createServer(app.callback()).listen(process.env.port || 3000 )

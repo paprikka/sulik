@@ -5,22 +5,39 @@
   height:   100%;
   top:      0;
   left:     0;
+  &.is-talking{
+    .hal__icon{
+      opacity: .2;
+      -webkit-transform: scale(.6);
+    }
+    .hal__result{
+      -webkit-transform: scale(.6);
+      opacity: .2;
+    }
+  }
 }
 
 .hal__icon{
   margin:100px auto 10px;
   display: block;
+  transition: .6s all;
 }
 
-.hal__message:extend(.alpha){
+
+.hal__messages:extend(.alpha){
+  box-sizing: border-box;
+  position: relative;
   font-weight: 100;
   display: block;
   text-align: center;
   font-weight: 100%;
-  font-size: 64px;
+  font-size: 48px;
+  padding: 20px;
+
 }
 
 .hal__result{
   opacity: .2;
+  transition: .4s all;
   -webkit-animation: fadeIn .4s ease 0s both;
 }

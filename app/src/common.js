@@ -5,5 +5,6 @@
 */
 angular.module('common', [
   'common.services.VoiceRecognition',
+  'common.services.TTS',
   'common.services.WolframAlpha'
 ]);

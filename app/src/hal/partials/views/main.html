@@ -1,10 +1,7 @@
-<div class="hal">
+<div class="hal" ng-class="{'is-talking': isTalking}">
   <img src="img/hal.jpg" alt="Sulik" class="hal__icon">
 
-  <div class="hal__message">
-    <div ng-if="!results.length">Hello.</div>
-    <div class="hal__result" ng-repeat="result in results |limitTo:1">{{result}}</div>
+<!--   <div class="hal__messages">
+    <div class="hal__message" ng-if="message">{{message}}</div>
   </div>
-</div>
-
-<audio ng-src="{{getSpeechResponse(results[0])}}" autoplay></audio>
+ --></div>

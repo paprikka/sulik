@@ -21,13 +21,17 @@ angular.module('common.services.VoiceRecognition', [])
 
 
 
-      VoiceRecognition.start = function(scope, onResult, onError) {
+      VoiceRecognition.start = function(scope, onResult, onProgress, onError) {
 
         recognition.onresult = function(e) {
           for (var i = e.resultIndex; i < e.results.length; ++i) {
             if (e.results[i].isFinal) {
               scope.$apply(function() {
                 onResult(e.results[i][0].transcript);
+              });
+            }else{
+              scope.$apply(function() {
+                onProgress(e.results[i][0].transcript);
               });
             }
           }

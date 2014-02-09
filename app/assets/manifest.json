@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "sulik",
+  "description": "A Chrome Voice Recognition Experiment",
+  "version": "1.0",
+
+  "permissions": [
+    "tts",
+    "https://foo.bar.baz:3000",
+    "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"
+  ],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "index.html"
+  }
+}

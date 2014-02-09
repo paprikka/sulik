@@ -41,7 +41,7 @@ angular.module('common.services.WolframAlpha', []).service('WolframAlpha', [
               answer.basicInformation = pod.subpod.plaintext;
             };
           });
-
+          answer.meta = json.queryresult;
           deferred.resolve(answer);
         }).error(function(err, status){
           deferred.reject(err);
