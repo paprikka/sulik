@@ -1,3 +1,10 @@
-<h1>hello</h1>
+<div class="hal">
+  <img src="img/hal.jpg" alt="Sulik" class="hal__icon">
 
-<div>bar {{test}}</div>
+  <div class="hal__message">
+    <div ng-if="!results.length">Hello.</div>
+    <div class="hal__result" ng-repeat="result in results |limitTo:1">{{result}}</div>
+  </div>
+</div>
+
+<audio ng-src="{{getSpeechResponse(results[0])}}" autoplay></audio>

@@ -22,7 +22,8 @@
     "angular-touch": "1.2.10",
     "fastclick": "~0.6.10",
     "angular-animate": "1.2.10",
-    "jasmine-sinon": "~0.3.1"
+    "jasmine-sinon": "~0.3.1",
+    "x2js": "*"
   },
   "authors": [
     "Rafal Pastuszak <rafal.pastuszak@gmail.com>"

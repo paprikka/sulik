@@ -1,6 +1,7 @@
 angular.module('app', [
   'app.templates',
   'ngRoute',
+  'common',
   'hal'
 ]).config([
 

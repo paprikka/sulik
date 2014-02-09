@@ -4,6 +4,7 @@ module.exports = {
       "vendor/jquery/jquery.js",
       "vendor/es5-shim/es5-shim.js",
       "vendor/lodash/lodash.js",
+      "vendor/x2js/xml2json.js",
       "vendor/angular/angular.js",
       "vendor/fastclick/lib/fastclick.js",
       "vendor/angular-cookies/angular-cookies.js",

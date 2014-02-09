@@ -1,12 +1,22 @@
 @import (less) "../../vendor/inuit-less/defaults.less";
 @import (less) "../../vendor/inuit-less/inuit.less";
+@import (less) "../../vendor/animate.css/animate.css";
 
+@black: black;
+@white: #fafafa;
+@gray-lighter: #f0f0f0;
 
+@import "utils/_animation.less";
+@import "_typography.less";
+@import "ui/_headings.less";
+@import "ui/_viewport.less";
+@import "ui/_hal.less";
 
-// @import "_typography.less";
-// @import "ui/_viewport.les";
 
 
 body {
-  
+  color: @gray-lighter;
+  background-color: @black;
+  font-family: @font-family-body;
+  font-weight: 100;
 }

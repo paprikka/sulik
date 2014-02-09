@@ -8,6 +8,7 @@ var jshint    = require('gulp-jshint');
 // var html2js   = require('gulp-html2js');
 var ngHtml2JS   = require('gulp-ng-html2js');
 var less      = require('gulp-less');
+var replace      = require('gulp-replace');
 var concat    = require('gulp-concat');
 var uglify    = require('gulp-uglify');
 var rename    = require('gulp-rename');
@@ -52,6 +53,7 @@ gulp.task('vendorScripts', function() {
 gulp.task('scripts', function() {
   gulp.src( config.app.base + 'src/**/*.js')
     .pipe(concat('app.js'))
+    .pipe(replace(/__WOLFRAM_API_KEY__/gi, process.env.WOLFRAM_ALPHA_API_KEY))
     .pipe(gulp.dest(config.dist.base + '/js'))
     .pipe(rename('app.min.js'))
     .pipe(uglify())
@@ -69,6 +71,7 @@ gulp.task('assets', function(){
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch(config.app.base + 'src/**/*.js', ['lint', 'scripts']);
+  gulp.watch('vendor/**/*.js', ['vendorScripts']);
   gulp.watch(config.app.base + 'src/**/*.html', ['templates']);
   gulp.watch(config.app.base + 'styles/**/*.less', ['less']);
   gulp.watch(config.app.base + 'assets/**/*.*', ['assets']);

@@ -1,7 +1,7 @@
 /**
 * hal Module
 *
-* VR / basic Wolphram API integration. Child module wrapper.
+* VR / basic Wolfram API integration. Child module wrapper.
 */
 angular.module('hal', [
   'hal.controllers.main'
